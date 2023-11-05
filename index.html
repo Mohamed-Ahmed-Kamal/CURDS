@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="main.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CURDS</title>
+</head>
+
+<body>
+  <div id="curd">
+    <h2>CUEDS</h2>
+    <p>CREATE READ UPDATE DELETE SERARCH</p>
+    <input type="text" placeholder="title" id="title" />
+    <div class="price">
+      <input onkeyup="getTotal()" type="number" placeholder="price" id="price" />
+      <input onkeyup="getTotal()" type="number" placeholder="taxes" id="taxes" />
+      <input onkeyup="getTotal()" type="number" placeholder="ads" id="ads" />
+      <input onkeyup="getTotal()" type="number" placeholder="discount" id="discount" />
+      <small id="total"> </small>
+    </div>
+    <input type="number" placeholder="count" id="count" />
+    <input type="text" placeholder="category" id="category" />
+    <button id="submit">Create</button>
+    <input  onkeyup="search_fun(this.value)" type="text" placeholder="Search" id="search">
+    <div id="searchBtn">
+      <button onclick="selectSearch(this.id)" id="searchTitle">Search By Title</button>
+      <button onclick="selectSearch(this.id)" id="searchCategory">Search By Category</button>
+    </div>
+    <button onclick="deleteAlldata()" id="deleteAll">delete all </button>
+    <table id="table">
+      <tr>
+        <th>ID</th>
+        <th>TITLE</th>
+        <th>PRICE</th>
+        <th>TAXES</th>
+        <th>ADS</th>
+        <th>DISCOUNT</th>
+        <th>TOTAL</th>
+        <th>CATEGORY</th>
+        <th>UPDATE</th>
+        <th>DELETE</th>
+      </tr>
+      <tbody id="tbody">
+
+      </tbody>
+    </table>
+    <script src="main.js"></script>
+  </body>
+</html>
