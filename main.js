@@ -99,7 +99,7 @@ function showDate() {
     <td>${products[i].discount}</td>
     <td>${products[i].total}</td>
     <td>${products[i].category.toLowerCase()}</td>
-    <td><button onclick="updateData(${i})">updaet</button></td>
+    <td><button onclick="updateData(${i})">update</button></td>
     <td><button onclick="deleteData(${i})">delete</button></td>
   </tr>
     `;
@@ -178,7 +178,7 @@ function search_fun(value) {
         <td>${products[i].discount}</td>
         <td>${products[i].total}</td>
         <td>${products[i].category}</td>
-        <td><button onclick="updateData(${i})">updaet</button></td>
+        <td><button onclick="updateData(${i})">update</button></td>
         <td><button onclick="deleteData(${i})">delete</button></td>
       </tr>
         `;
@@ -197,7 +197,7 @@ function search_fun(value) {
         <td>${products[i].discount}</td>
         <td>${products[i].total}</td>
         <td>${products[i].category}</td>
-        <td><button onclick="updateData(${i})">updaet</button></td>
+        <td><button onclick="updateData(${i})">update</button></td>
         <td><button onclick="deleteData(${i})">delete</button></td>
       </tr>
         `;
